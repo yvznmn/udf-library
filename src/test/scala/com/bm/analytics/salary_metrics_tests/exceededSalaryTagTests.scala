@@ -1,4 +1,4 @@
-package com.bm.analytics.unit.salary_metrics_tests
+package com.bm.analytics.salary_metrics_tests
 
 import com.bm.analytics.TestConstructor
 import com.bm.analytics.salary_metrics.exceededSalaryTag
