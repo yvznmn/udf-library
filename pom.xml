@@ -59,10 +59,10 @@
     </resources>
     <plugins>
 
-<!--      <plugin>-->
-<!--        <groupId>net.alchim31.maven</groupId>-->
-<!--        <artifactId>scala-maven-plugin</artifactId>-->
-<!--        <version>4.7.2</version>-->
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>3.3.3</version>
 <!--        <executions>-->
 <!--          <execution>-->
 <!--            <id>compile</id>-->
@@ -81,7 +81,44 @@
 <!--            <arg>-unchecked-</arg>-->
 <!--          </args>-->
 <!--        </configuration>-->
-<!--      </plugin>-->
+      </plugin>
+
+      <plugin>
+        <groupId>org.scalatest</groupId>
+        <artifactId>scalatest-maven-plugin</artifactId>
+        <version>2.2.0</version>
+
+        <configuration>
+          <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+          <junitxml>.</junitxml>
+          <filereports>${project.artifactId}.txt</filereports>
+          <skipTests>false</skipTests>
+        </configuration>
+
+        <executions>
+          <execution>
+            <configuration>
+              <wildcardSuites>com.bm.analytics.tests.unit</wildcardSuites>
+            </configuration>
+            <id>unit-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+          <execution>
+            <configuration>
+              <wildcardSuites>com.bm.analytics.tests.integration</wildcardSuites>
+            </configuration>
+            <id>integration-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+
+      </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -93,6 +130,6 @@
         </configuration>
       </plugin>
 
-    </plugins>
-  </build>
-</project>
+          </plugins>
+        </build>
+      </project>
