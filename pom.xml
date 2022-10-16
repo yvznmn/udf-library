@@ -59,10 +59,10 @@
     </resources>
     <plugins>
 
-      <plugin>
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-        <version>3.3.3</version>
+<!--      <plugin>-->
+<!--        <groupId>net.alchim31.maven</groupId>-->
+<!--        <artifactId>scala-maven-plugin</artifactId>-->
+<!--        <version>3.3.3</version>-->
 <!--        <executions>-->
 <!--          <execution>-->
 <!--            <id>compile</id>-->
@@ -81,7 +81,7 @@
 <!--            <arg>-unchecked-</arg>-->
 <!--          </args>-->
 <!--        </configuration>-->
-      </plugin>
+<!--      </plugin>-->
 
       <plugin>
         <groupId>org.scalatest</groupId>
