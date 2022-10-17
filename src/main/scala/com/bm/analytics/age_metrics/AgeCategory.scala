@@ -10,7 +10,11 @@ class AgeCategory {
 
     if (age != null) {
 
-      if (age < age_category_30) {
+      if (age < 0) {
+        -1
+      }
+
+      else if (age < age_category_30) {
         1
       }
 

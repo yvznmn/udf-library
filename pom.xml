@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.bm.analytics</groupId>
-  <artifactId>udf_library</artifactId>
+  <artifactId>udf-library</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
