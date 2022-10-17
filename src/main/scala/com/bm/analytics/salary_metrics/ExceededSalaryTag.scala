@@ -4,12 +4,14 @@ import com.bm.analytics.utils.{PropertyStore, Constants}
 
 import scala.math.BigDecimal.javaBigDecimal2bigDecimal
 
-class exceededSalaryTag {
+class ExceededSalaryTag {
 
-  def _get(salary: BigDecimal): Int = {
-    //null check
+  def call(salary: BigDecimal): Int = {
+
+    val exceeded_salary_limit = PropertyStore.get_bigdecimal(Constants.SalaryMetricsConsts.exceeded_salary_limit)
+
     if (salary != null) {
-      if (salary > PropertyStore.get_bigdecimal(Constants.SalaryMetricsConsts.exceeded_salary_limit)) {
+      if (salary > exceeded_salary_limit) {
         1
       } else {
         0
