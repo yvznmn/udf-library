@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="com.bm.analytics.tests.unit.age_metrics_tests.ageCategoryTests" tests="1" time="0.002" timestamp="2022-10-17T15:24:55">
+errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="com.bm.analytics.tests.integration.AgeMetricsTests" tests="1" time="0.088" timestamp="2022-10-17T15:25:05">
   <properties>
     <property
     name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -53,7 +53,7 @@ errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="com.bm.analytics.tests.
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_271\jre"/>
     <property
-    name="sun.java.command" value="org.scalatest.tools.Runner -R C:\Users\yvznm\IdeaProjects\udf-library\target\classes C:\Users\yvznm\IdeaProjects\udf-library\target\test-classes -w com.bm.analytics.tests.unit -o -f C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\udf-library.txt -u C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\."/>
+    name="sun.java.command" value="org.scalatest.tools.Runner -R C:\Users\yvznm\IdeaProjects\udf-library\target\classes C:\Users\yvznm\IdeaProjects\udf-library\target\test-classes -w com.bm.analytics.tests.integration -o -f C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\udf-library.txt -u C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\."/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -73,7 +73,7 @@ errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="com.bm.analytics.tests.
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase 
-  name="The Calculation should return 1 if age is smaller than 30" classname="com.bm.analytics.tests.unit.age_metrics_tests.ageCategoryTests" time="0.0">
+  name="Age Metrics [age category] should be populated in a spark dataframe" classname="com.bm.analytics.tests.integration.AgeMetricsTests" time="0.078">
 </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="org.scalatest.tools.DiscoverySuite" tests="0" time="0.007" timestamp="2022-10-17T08:39:52">
+errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="org.scalatest.tools.DiscoverySuite" tests="0" time="0.036" timestamp="2022-10-17T15:24:54">
   <properties>
     <property
     name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -53,7 +53,7 @@ errors="0" failures="0" hostname="DESKTOP-JPN8U4T" name="org.scalatest.tools.Dis
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_271\jre"/>
     <property
-    name="sun.java.command" value="org.scalatest.tools.Runner -R C:\Users\yvznm\IdeaProjects\udf-library\target\classes C:\Users\yvznm\IdeaProjects\udf-library\target\test-classes -w com.bm.analytics.tests.integration -o -f C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\udf_library.txt -u C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\."/>
+    name="sun.java.command" value="org.scalatest.tools.Runner -R C:\Users\yvznm\IdeaProjects\udf-library\target\classes C:\Users\yvznm\IdeaProjects\udf-library\target\test-classes -w com.bm.analytics.tests.unit -o -f C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\udf-library.txt -u C:\Users\yvznm\IdeaProjects\udf-library\target\surefire-reports\."/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
