@@ -2,6 +2,7 @@ package com.bm.analytics.utils
 
 object Constants {
 
+  final val Decimals20p4s : String = "decimal(20,4)"
   final private val prefix : String = "com.bm.analytics"
 
   object SalaryMetricsConsts {

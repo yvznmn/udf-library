@@ -13,6 +13,8 @@ class ExceededSalaryTag {
     if (salary != null) {
       if (salary > exceeded_salary_limit) {
         1
+      } else if (salary<0) {
+        -1
       } else {
         0
       }

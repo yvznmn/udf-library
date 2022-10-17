@@ -27,7 +27,7 @@ object BM {
 
   private def register_salary_metrics(sql_context: SQLContext): Unit = {
     val exceeded_salary_tag = new ExceededSalaryTag() with UDF1[BigDecimal, Int]
-    sql_context.udf.register("exceeded_salary_limit", exceeded_salary_tag, DataTypes.IntegerType)
+    sql_context.udf.register("exceeded_salary_flag", exceeded_salary_tag, DataTypes.IntegerType)
   }
 
 }
