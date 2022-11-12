@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'workers'
+        label 'built-in nodes'
     }
     stages {
         try {
