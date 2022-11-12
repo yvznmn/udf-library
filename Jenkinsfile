@@ -11,6 +11,7 @@ pipeline {
         }
         stage('Build') {
             echo "Building artifacts"
+        }
     }
 
 }
