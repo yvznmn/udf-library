@@ -7,10 +7,18 @@ pipeline {
     }
     stages {
         stage('Checkout') {
-            echo "Checkout"
+            steps {
+                script {
+                    echo "Checkout"
+                }
+            }
         }
         stage('Build') {
-            echo "Building artifacts"
+            steps {
+                script {
+                    echo "Building Artifacts"
+                }
+            }
         }
     }
 
